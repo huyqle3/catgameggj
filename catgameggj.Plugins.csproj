@@ -143,16 +143,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BrokenVector\LowPolyTreePack\README.txt" />
-    <None Include="Assets\HoloToolkit\Utilities\Shaders\LambertianConfigurable.cginc" />
-    <None Include="Assets\HoloToolkit\Utilities\Shaders\LambertianConfigurable.shader" />
-    <None Include="Assets\HoloToolkit\Utilities\Shaders\LambertianConfigurableTransparent.shader" />
-    <None Include="Assets\HoloToolkit\Utilities\Shaders\StandardFast.shader" />
-    <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurable.cginc" />
-    <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurable.shader" />
-    <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurableTransparent.shader" />
-    <None Include="Assets\HoloToolkit\Utilities\Shaders\VertexLitConfigurable.cginc" />
-    <None Include="Assets\HoloToolkit\Utilities\Shaders\VertexLitConfigurable.shader" />
-    <None Include="Assets\HoloToolkit\Utilities\Shaders\VertexLitConfigurableTransparent.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurable.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurableTransparent.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\StandardFast.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\UnlitConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\UnlitConfigurable.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\UnlitConfigurableTransparent.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\VertexLitConfigurable.cginc" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\VertexLitConfigurable.shader" />
+    <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\VertexLitConfigurableTransparent.shader" />
     <None Include="Assets\Resources\Shaders\SpecularHighlight.shader" />
     <None Include="Assets\Resources\Shaders\StandardFastBackFaceCulling.shader" />
     <None Include="Assets\Resources\Shaders\UITransparent.shader" />

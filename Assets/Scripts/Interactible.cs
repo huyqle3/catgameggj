@@ -44,13 +44,10 @@ public class Interactible : MonoBehaviour
         }
     }
 
-    /* TODO: DEVELOPER CODING EXERCISE 2.d */
-
     void GazeEntered()
     {
         for (int i = 0; i < defaultMaterials.Length; i++)
         {
-            // 2.d: Uncomment the below line to highlight the material when gaze enters.
             defaultMaterials[i].SetFloat("_Highlight", .25f);
         }
     }
@@ -59,7 +56,6 @@ public class Interactible : MonoBehaviour
     {
         for (int i = 0; i < defaultMaterials.Length; i++)
         {
-            // 2.d: Uncomment the below line to remove highlight on material when gaze exits.
             defaultMaterials[i].SetFloat("_Highlight", 0f);
         }
     }
@@ -77,8 +73,6 @@ public class Interactible : MonoBehaviour
             audioSource.Play();
         }
 
-        /* TODO: DEVELOPER CODING EXERCISE 6.a */
-        // 6.a: Handle the OnSelect by sending a PerformTagAlong message.
-        
+        this.SendMessage("PerformTagAlong");
     }
 }
