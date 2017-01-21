@@ -204,3 +204,6 @@ sysinfo.txt
 *.stackdump
 project.lock.json
 App/[pP]layers/
+
+# Mac
+.DS_Store
