@@ -141,6 +141,7 @@
     <Compile Include="Assets\Scripts\Interactible.cs" />
     <Compile Include="Assets\Scripts\InteractibleAction.cs" />
     <Compile Include="Assets\Scripts\InteractibleManager.cs" />
+    <Compile Include="Assets\Scripts\SpeechManager.cs" />
     <Compile Include="Assets\Scripts\TapMovement.cs" />
   </ItemGroup>
   <ItemGroup>
