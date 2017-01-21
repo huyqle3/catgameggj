@@ -84,6 +84,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Game Jam Template\Scripts\DontDestroy.cs" />
+    <Compile Include="Assets\Game Jam Template\Scripts\EventSystemChecker.cs" />
+    <Compile Include="Assets\Game Jam Template\Scripts\Pause.cs" />
+    <Compile Include="Assets\Game Jam Template\Scripts\PlayMusic.cs" />
+    <Compile Include="Assets\Game Jam Template\Scripts\QuitApplication.cs" />
+    <Compile Include="Assets\Game Jam Template\Scripts\SetAudioLevels.cs" />
+    <Compile Include="Assets\Game Jam Template\Scripts\ShowPanels.cs" />
+    <Compile Include="Assets\Game Jam Template\Scripts\StartOptions.cs" />
     <Compile Include="Assets\HoloToolkit-Gesture-211\Input\Scripts\CursorFeedback.cs" />
     <Compile Include="Assets\HoloToolkit-Gesture-211\Input\Scripts\CursorManager.cs" />
     <Compile Include="Assets\HoloToolkit-Gesture-211\Input\Scripts\GazeManager.cs" />
@@ -137,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BrokenVector\LowPolyTreePack\README.txt" />
+    <None Include="Assets\Game Jam Template\GameJamTemplateReadMe.txt" />
     <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurable.cginc" />
     <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurable.shader" />
     <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurableTransparent.shader" />

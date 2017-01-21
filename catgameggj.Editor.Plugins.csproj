@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BrokenVector\LowPolyTreePack\README.txt" />
+    <None Include="Assets\Game Jam Template\GameJamTemplateReadMe.txt" />
     <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurable.cginc" />
     <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurable.shader" />
     <None Include="Assets\HoloToolkit-Gesture-211\Utilities\Shaders\LambertianConfigurableTransparent.shader" />
