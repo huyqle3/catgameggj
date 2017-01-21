@@ -1,5 +1,5 @@
 # catgameggj
-The best HoloLens cat game you'll ever see. Global Game Jam 2017.
+The best HoloLens cat :cat: game you'll ever play. Global Game Jam 2017. :tiger:
 
 ### Version
 
