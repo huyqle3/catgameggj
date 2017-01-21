@@ -1,7 +1,15 @@
 fileFormatVersion: 2
-guid: a20eb0e3ce84e4517b11bdefdf37dd77
-timeCreated: 1484979829
-licenseType: Free
+guid: ec7286e0017272441a3dec9205cb8daf
+labels:
+- dead
+- plant
+- pack
+- low-poly
+- set
+- lowpoly
+- tree
+timeCreated: 1457642468
+licenseType: Store
 NativeFormatImporter:
   userData: 
   assetBundleName: 

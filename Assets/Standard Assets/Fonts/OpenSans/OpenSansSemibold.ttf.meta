@@ -1,17 +1,13 @@
 fileFormatVersion: 2
-guid: 02637103b5aab45efab16cf3cfe18511
-timeCreated: 1484979831
-licenseType: Free
+guid: 8f27e1f9bd882434da7b36a8dd210478
 TrueTypeFontImporter:
-  serializedVersion: 4
+  serializedVersion: 3
   fontSize: 16
   forceTextureCase: -2
-  characterSpacing: 0
-  characterPadding: 1
+  characterSpacing: 1
+  characterPadding: 0
   includeFontData: 1
-  fontName: Open Sans
-  fontNames:
-  - Open Sans
+  fontNames: []
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

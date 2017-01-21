@@ -1,12 +1,10 @@
 fileFormatVersion: 2
-guid: c12848111c8c740888aa2992b8e24604
-timeCreated: 1484979798
-licenseType: Free
+guid: b0923359e9e352a4b9b11c7b7161ad67
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_SSAOShader: {fileID: 4800000, guid: 43ca18288c424f645aaa1e9e07f04c50, type: 3}
+  - m_RandomTexture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
-  assetBundleName: 
-  assetBundleVariant: 

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: 691da2bc0a36d41d19d44c2846aed95f
-timeCreated: 1484979841
-licenseType: Free
+guid: 9f271cac34f8a384fbd96577f2846b24
+timeCreated: 1477079166
+licenseType: Store
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -39,8 +39,9 @@ ModelImporter:
     100062: Tail3
     100064: Tail4
     100066: Tail5
-    100068: Tiger
-    100070: //RootNode
+    100068: //RootNode
+    100070: Tiger01
+    100072: Tiger
     400000: CG
     400002: Ear L
     400004: Ear R
@@ -76,19 +77,22 @@ ModelImporter:
     400064: Tail4
     400066: Tail5
     400068: //RootNode
-    400070: Tiger
-    4300000: Tiger
+    400070: Tiger01
+    400072: Tiger
+    4300000: Tiger01
+    4300002: Tiger
     7400000: Take 001
     9500000: //RootNode
-    13700000: Tiger
+    13700000: Tiger01
+    13700002: Tiger
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleCurves: 1
+    resampleRotations: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -124,10 +128,9 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -137,11 +140,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    rootMotionBoneName: CG
     hasTranslationDoF: 0
-    hasExtraRoot: 0
-    skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1

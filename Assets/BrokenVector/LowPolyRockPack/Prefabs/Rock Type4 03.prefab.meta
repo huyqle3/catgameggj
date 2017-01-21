@@ -1,7 +1,14 @@
 fileFormatVersion: 2
-guid: bd2f481c706d5425483202343e69fe9a
-timeCreated: 1484979829
-licenseType: Free
+guid: 491333d4c0bd88148813a9dde7fe955b
+labels:
+- lowpoly
+- rock
+- low-poly
+- rocks
+- art
+- pack
+timeCreated: 1457638048
+licenseType: Store
 NativeFormatImporter:
   userData: 
   assetBundleName: 
