@@ -4,22 +4,20 @@ using UnityEngine;
 
 public class TigerColliders : MonoBehaviour {
 
-    public FishScore fishScore;
-    public FishScore lives;
-    public WaterMove water;
+    public float angle = 30f;
 
-	// Use this for initialization
-	void Start () {
+    FishScore fishScore;
+    FishScore lives;
+    WaterMove water;
+    public Transform player;
+
+    void Awake () {
 
         fishScore = GameObject.Find("FishScore").GetComponent<FishScore>();
         lives = GameObject.Find("LivesScore").GetComponent<FishScore>();
         water = GameObject.Find("Water").GetComponent<WaterMove>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        player = GameObject.FindGameObjectWithTag("MainCamera").transform;
+    }
 
     void OnTriggerEnter(Collider col)
     {
@@ -27,7 +25,7 @@ public class TigerColliders : MonoBehaviour {
         {
             fishScore.score += 1;
             //print("fish touched");
-            Destroy(col.gameObject);
+            Throw(col.gameObject.transform, player);
         }
 
         else if (col.gameObject.tag == "Water") {
@@ -37,5 +35,25 @@ public class TigerColliders : MonoBehaviour {
                 lives.score -= 1;
             }
         }
+    }
+
+    void Throw(Transform fish, Transform target)
+    {
+        fish.gameObject.layer = LayerMask.NameToLayer("Catching");
+        Rigidbody rb = fish.GetComponent<Rigidbody>();
+        rb.isKinematic = false;
+        Vector3 offset = Vector3.zero; //new Vector3(Random.Range(-0.5f, 0.5f), 0f, 0f);
+        Vector3 dir = ((target.position - fish.position) * 2) + offset;
+        float h = dir.y;
+        dir.y = 0;
+
+        float distance = dir.magnitude;
+        float radAngle = angle * Mathf.Deg2Rad;
+        dir.y = distance * Mathf.Tan(radAngle);
+        float vel = Mathf.Sqrt(distance * Physics.gravity.magnitude / Mathf.Sin(2 * radAngle));
+
+        rb.velocity = vel * fish.InverseTransformDirection(dir.normalized);
+
+        Destroy(fish.gameObject, 3f);
     }
 }
