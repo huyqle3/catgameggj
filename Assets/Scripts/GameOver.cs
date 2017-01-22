@@ -13,6 +13,11 @@ public class GameOver : MonoBehaviour {
     public FishScore lives;
     public Text myText;
 
+    void Awake()
+    {
+        Time.timeScale = 1f;
+    }
+
 	// Use this for initialization
 	void Start () {
 
@@ -29,18 +34,19 @@ public class GameOver : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (fishScore.score >= 10 && !YouLose){
+        /*if (fishScore.score >= 10 && !YouLose){
             gameOver = true;
             YouWin = true;
             myText.text = "You Win!";
             myText.enabled = true;
-        }
+        }*/
 
         if (lives.score <= 0 && !YouWin){
             gameOver = true;
             YouLose = true;
             myText.text = "You Lose!";
             myText.enabled = true;
+            Time.timeScale = 0f;
         }
 		
 	}
