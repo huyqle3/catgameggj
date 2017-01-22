@@ -1,0 +1,119 @@
+fileFormatVersion: 2
+guid: cd68e29d393274a1eb188de9724393ed
+timeCreated: 1485059642
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 01_Beach
+    100002: 02_Sand_Land
+    100004: 03_Front_rocky_beach
+    100006: 04_Mountains
+    100008: 05_Ocean
+    100010: 06_Ocean_Rocks
+    100012: 07_Beachfront_Rocks
+    100014: 08_Waterfall_Rocks
+    100016: //RootNode
+    400000: 01_Beach
+    400002: 02_Sand_Land
+    400004: 03_Front_rocky_beach
+    400006: 04_Mountains
+    400008: 05_Ocean
+    400010: 06_Ocean_Rocks
+    400012: 07_Beachfront_Rocks
+    400014: 08_Waterfall_Rocks
+    400016: //RootNode
+    2300000: 01_Beach
+    2300002: 02_Sand_Land
+    2300004: 03_Front_rocky_beach
+    2300006: 04_Mountains
+    2300008: 05_Ocean
+    2300010: 06_Ocean_Rocks
+    2300012: 07_Beachfront_Rocks
+    2300014: 08_Waterfall_Rocks
+    3300000: 01_Beach
+    3300002: 02_Sand_Land
+    3300004: 03_Front_rocky_beach
+    3300006: 04_Mountains
+    3300008: 05_Ocean
+    3300010: 06_Ocean_Rocks
+    3300012: 07_Beachfront_Rocks
+    3300014: 08_Waterfall_Rocks
+    4300000: 01_Beach
+    4300002: 08_Waterfall_Rocks
+    4300004: 07_Beachfront_Rocks
+    4300006: 05_Ocean
+    4300008: 06_Ocean_Rocks
+    4300010: 02_Sand_Land
+    4300012: 03_Front_rocky_beach
+    4300014: 04_Mountains
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
