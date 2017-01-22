@@ -45,15 +45,26 @@ namespace Academy.HoloToolkit.Unity
         [Tooltip("Lerp speed when moving focus point farther away.")]
         public float LerpStabilizationPlanePowerFarther = 7.0f;
 
+        private GazeStabilizer gazeStabilizer;
         private Vector3 gazeOrigin;
         private Vector3 gazeDirection;
         private float lastHitDistance = 15.0f;
         private GameObject focusedObject;
 
+        void Awake()
+        {
+            gazeStabilizer = GetComponent<GazeStabilizer>();
+        }
+
         private void Update()
         {
             gazeOrigin = Camera.main.transform.position;
+
             gazeDirection = Camera.main.transform.forward;
+
+            gazeStabilizer.UpdateHeadStability(gazeOrigin, Camera.main.transform.rotation);
+
+            gazeOrigin = gazeStabilizer.StableHeadPosition;
 
             UpdateRaycast();
 
