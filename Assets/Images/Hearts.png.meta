@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 44244051d150bd942bd4d2afe80be019
+timeCreated: 1485105428
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 5_Hearts
+    21300002: 4_Hearts
+    21300004: 3_Hearts
+    21300006: 2_Hearts
+    21300008: 1_Hearts
+    21300010: 0_Hearts
+    21300012: Hearts_6
+    21300014: Hearts_7
+    21300016: Hearts_8
+    21300018: Hearts_9
+    21300020: Hearts_10
+    21300022: Hearts_11
+    21300024: Hearts_12
+    21300026: Hearts_13
+    21300028: Hearts_14
+    21300030: Hearts_15
+    21300032: Hearts_16
+    21300034: Hearts_17
+    21300036: Hearts_18
+    21300038: Hearts_19
+    21300040: Hearts_20
+    21300042: Hearts_21
+    21300044: Hearts_22
+    21300046: Hearts_23
+    21300048: Hearts_24
+    21300050: Hearts_25
+    21300052: Hearts_26
+    21300054: Hearts_27
+    21300056: Hearts_28
+    21300058: Hearts_29
+    21300060: Live_Heart
+    21300062: Dead_Heart
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 25
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 5_Hearts
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 76
+        width: 87
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 4_Hearts
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 61
+        width: 87
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 3_Hearts
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 87
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2_Hearts
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 87
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 1_Hearts
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 87
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 0_Hearts
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 87
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Live_Heart
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Dead_Heart
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

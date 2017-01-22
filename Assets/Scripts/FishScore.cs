@@ -8,6 +8,7 @@ public class FishScore : MonoBehaviour
     public bool life = false;
     public int score = 0;
     public Text myText;
+    // public GameObject[] Hearts;
 
     void Start()
     {
