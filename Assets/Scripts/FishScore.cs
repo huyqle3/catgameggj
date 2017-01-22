@@ -8,13 +8,14 @@ public class FishScore : MonoBehaviour
     public bool life = false;
     public int score = 0;
     public Text myText;
+    public int lives;
     // public GameObject[] Hearts;
 
     void Start()
     {
         if (life)
         {
-            Reset(9);
+            Reset(lives);
         }
         else
             Reset(0);
