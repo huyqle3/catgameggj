@@ -173,7 +173,9 @@ namespace Academy.HoloToolkit.Unity
         {
             GameObject focusedObject = InteractibleManager.Instance.FocusedGameObject;
 
-            if (focusedObject != null && source == InteractionSourceKind.Controller)
+            // Bluetooth clicker to control movement? Future integration potential. Need to discuss design.
+            // if (focusedObject != null && source == InteractionSourceKind.Controller)
+            if (focusedObject != null)
             {
                 focusedObject.SendMessageUpwards("OnSelect");
             }
