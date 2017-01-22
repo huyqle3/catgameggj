@@ -9,7 +9,8 @@ public class TapMovement : MonoBehaviour
 {
     [Tooltip("GameObject player.")]
     public GameObject player;
-    public Transform target; 
+    public Transform target;
+    public LayerMask raycastLayerMask;
 
     // Called by GazeGestureManager when the user performs a Select gesture
     void OnSelect()
@@ -19,7 +20,7 @@ public class TapMovement : MonoBehaviour
         var gazeDirection = Camera.main.transform.forward;
 
         RaycastHit hitInfo;
-        if (Physics.Raycast(headPosition, gazeDirection, out hitInfo))
+        if (Physics.Raycast(headPosition, gazeDirection, out hitInfo, Mathf.Infinity, raycastLayerMask))
         {
             target.position = hitInfo.point;
         }
