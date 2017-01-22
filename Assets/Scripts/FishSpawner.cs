@@ -85,7 +85,7 @@ public class FishSpawner : MonoBehaviour {
 
     public void SpawnFish()
     {
-        posx = Random.RandomRange(-4f, 4f);
+        posx = Random.RandomRange(-6f, 6f);
         posz = Random.RandomRange(-1f, 1f);
         GameObject FishName = null;
         FishName = (GameObject)Instantiate(Fish, transform.position, Quaternion.identity);
