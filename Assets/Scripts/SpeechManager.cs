@@ -21,6 +21,12 @@ public class SpeechManager : MonoBehaviour
             }
         });
 
+        keywords.Add("Play again", () =>
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        });
+        
+
         // Tell the KeywordRecognizer about our keywords.
         keywordRecognizer = new KeywordRecognizer(keywords.Keys.ToArray());
 
