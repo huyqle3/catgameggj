@@ -25,9 +25,4 @@ public class TapMovement : MonoBehaviour
             target.position = hitInfo.point;
         }
     }
-
-    void Update()
-    {
-        
-    }
 }

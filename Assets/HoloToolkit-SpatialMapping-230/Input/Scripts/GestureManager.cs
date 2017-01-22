@@ -173,7 +173,7 @@ namespace Academy.HoloToolkit.Unity
         {
             GameObject focusedObject = InteractibleManager.Instance.FocusedGameObject;
 
-            if (focusedObject != null)
+            if (focusedObject != null && source == InteractionSourceKind.Controller)
             {
                 focusedObject.SendMessageUpwards("OnSelect");
             }
