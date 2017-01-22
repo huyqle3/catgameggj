@@ -11,7 +11,7 @@ namespace Academy.HoloToolkit.Unity
         public float MaxGazeDistance = 5.0f;
 
         [Tooltip("Select the layers raycast should target.")]
-        public LayerMask RaycastLayerMask = Physics.DefaultRaycastLayers;
+        public LayerMask RaycastLayerMask;
 
         /// <summary>
         /// Physics.Raycast result is true if it hits a Hologram.
