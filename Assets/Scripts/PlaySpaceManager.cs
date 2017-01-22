@@ -70,19 +70,22 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 
                 /* TODO: 3.a DEVELOPER CODING EXERCISE 3.a */
 
+                /* TODO: 3.a DEVELOPER CODING EXERCISE 3.a */
+
                 // 3.a: Check if IsObserverRunning() is true on the
                 // SpatialMappingManager.Instance.
-                //if()
+                if (SpatialMappingManager.Instance.IsObserverRunning())
                 {
                     // 3.a: If running, Stop the observer by calling
                     // StopObserver() on the SpatialMappingManager.Instance.
-
+                    SpatialMappingManager.Instance.StopObserver();
                 }
 
                 // 3.a: Call CreatePlanes() to generate planes.
-
+                CreatePlanes();
 
                 // 3.a: Set meshesProcessed to true.
+                meshesProcessed = true;
 
             }
         }
@@ -106,12 +109,12 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
         // 3.a: Get all floor and table planes by calling
         // SurfaceMeshesToPlanes.Instance.GetActivePlanes().
         // Assign the result to the 'horizontal' list.
-
+        horizontal = SurfaceMeshesToPlanes.Instance.GetActivePlanes(PlaneTypes.Table | PlaneTypes.Floor);
 
         // 3.a: Get all wall planes by calling
         // SurfaceMeshesToPlanes.Instance.GetActivePlanes().
         // Assign the result to the 'vertical' list.
-
+        vertical = SurfaceMeshesToPlanes.Instance.GetActivePlanes(PlaneTypes.Wall);
 
         // Check to see if we have enough horizontal planes (minimumFloors)
         // and vertical planes (minimumWalls), to set holograms on in the world.
@@ -123,19 +126,20 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
             // from SpatialMapping meshes that intersect with our active planes.
             // Call RemoveVertices().
             // Pass in all activePlanes found by SurfaceMeshesToPlanes.Instance.
-
+            RemoveVertices(SurfaceMeshesToPlanes.Instance.ActivePlanes);
 
             // 3.a: We can indicate to the user that scanning is over by
             // changing the material applied to the Spatial Mapping meshes.
             // Call SpatialMappingManager.Instance.SetSurfaceMaterial().
             // Pass in the secondaryMaterial.
-
+            SpatialMappingManager.Instance.SetSurfaceMaterial(secondaryMaterial);
 
             // 3.a: We are all done processing the mesh, so we can now
             // initialize a collection of Placeable holograms in the world
             // and use horizontal/vertical planes to set their starting positions.
             // Call SpaceCollectionManager.Instance.GenerateItemsInWorld().
             // Pass in the lists of horizontal and vertical planes that we found earlier.
+            SpaceCollectionManager.Instance.GenerateItemsInWorld(horizontal, vertical);
 
         }
         else
@@ -144,10 +148,11 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 
             // 3.a: Re-enter scanning mode so the user can find more surfaces by 
             // calling StartObserver() on the SpatialMappingManager.Instance.
-
+            SpatialMappingManager.Instance.StartObserver();
 
             // 3.a: Re-process spatial data after scanning completes by
             // re-setting meshesProcessed to false.
+            meshesProcessed = false;
 
         }
     }
