@@ -10,6 +10,7 @@ public class TigerColliders : MonoBehaviour {
     FishScore lives;
     WaterMove water;
     public Transform player;
+    HealthBarManager healthBarManager;
 
     void Awake () {
 
@@ -17,6 +18,7 @@ public class TigerColliders : MonoBehaviour {
         lives = GameObject.Find("LivesScore").GetComponent<FishScore>();
         water = GameObject.Find("Water").GetComponent<WaterMove>();
         player = GameObject.FindGameObjectWithTag("MainCamera").transform;
+        healthBarManager = GameObject.FindGameObjectWithTag("HealthBar").GetComponent<HealthBarManager>();
     }
 
     void OnTriggerEnter(Collider col)
@@ -33,6 +35,7 @@ public class TigerColliders : MonoBehaviour {
             {
                 water.canKill = false;
                 lives.score -= 1;
+                healthBarManager.destroyHeart(lives.score);
             }
         }
     }
