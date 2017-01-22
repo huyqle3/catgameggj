@@ -15,19 +15,21 @@ public class WaterMove : MonoBehaviour {
     public Transform pos1;
     public Transform pos2;
     private float timer;
+    public float waveGoneTime;
 
 	// Use this for initialization
 	void Start () {
         timer = 0;
-		
+        waveGoneTime = timerMax;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
         timer += Time.deltaTime;
 
-        if (timer >= timerMax && !waveGo) {
+        waveGoneTime = Mathf.Max(timerMax - (0.5f * (int)(Time.timeSinceLevelLoad / 30f)), 1f);
+
+        if (timer >= waveGoneTime && !waveGo) {
             canKill = true;
             canKillFish = true;
             pos1Go = true;
