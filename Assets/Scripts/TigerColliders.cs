@@ -42,17 +42,15 @@ public class TigerColliders : MonoBehaviour {
         fish.gameObject.layer = LayerMask.NameToLayer("Catching");
         Rigidbody rb = fish.GetComponent<Rigidbody>();
         rb.isKinematic = false;
-        Vector3 offset = Vector3.zero; //new Vector3(Random.Range(-0.5f, 0.5f), 0f, 0f);
-        Vector3 dir = ((target.position - fish.position) * 2) + offset;
-        float h = dir.y;
-        dir.y = 0;
 
-        float distance = dir.magnitude;
-        float radAngle = angle * Mathf.Deg2Rad;
-        dir.y = distance * Mathf.Tan(radAngle);
-        float vel = Mathf.Sqrt(distance * Physics.gravity.magnitude / Mathf.Sin(2 * radAngle));
+        Vector3 offset = new Vector3(Random.Range(-1f, 1f), Random.Range(-0.1f, 0.1f), 0f);
+        Vector3 dif = (target.position + offset) - fish.position;
+        float vx = dif.x;
+        float vy = dif.y + 0.5f * Physics.gravity.magnitude;
+        float vz = dif.z;
 
-        rb.velocity = vel * fish.InverseTransformDirection(dir.normalized);
+        rb.velocity = new Vector3(vx, vy, vz);
+
 
         Destroy(fish.gameObject, 3f);
     }
